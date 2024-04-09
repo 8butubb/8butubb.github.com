@@ -1,1 +1,22 @@
-<p>Hello 大家好</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示指定内容</title>
+</head>
+<body>
+    <label for="inputContent">输入内容：</label>
+    <input type="text" id="inputContent">
+    <button onclick="displayContent()">显示内容</button>
+    <p id="displayArea"></p>
+
+    <script>
+        function displayContent() {
+            var input = document.getElementById('inputContent').value;
+            var displayArea = document.getElementById('displayArea');
+            displayArea.textContent = input;
+        }
+    </script>
+</body>
+</html>
